@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Enables business to meet its goals.',     11],
+          ['Technical service provider to business end users.',      2],
+          ['Developers of key software that provides the organization with a competitive advantage.',  2],
+          ['Innovators of business processes.', 2],
+          ['Other. Please specify',    7]
+        ]);
+
+        var options = {
+          title: 'Do Non Profit Managers view the role IT Departments play differently than their counterparts?',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Enables business to meet its goals.',     11],
+          ['Technical service provider to business end users.',      2],
+          ['Developers of key software that provides the organization with a competitive advantage.',  2],
+          ['Innovators of business processes.', 2],
+          ['Other. Please specify',    7]
+        ]);
+
+        var options = {
+          title: 'Do For Profit view the role IT Departments play differently than their counterparts?',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d2'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+    <div id="piechart_3d2" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
+
